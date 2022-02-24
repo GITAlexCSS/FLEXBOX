@@ -38,9 +38,12 @@ body{
 
 .block__row{
     display:flex;
-    justify-content:space-between;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
     border:20px solid #ece89d;
     margin: 0px 0px 20px 0px;
+    padding: 300px;
+    
     
 }
 
