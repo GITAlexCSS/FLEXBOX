@@ -13,8 +13,26 @@ body{
 .block{
 
 }
+/* display:flex; включает флексы */
+/* display:inline-flex; строчный флекс контейнер перестает растягиватся во всю ширину */
+/* justify-content: определяет выравнивание вдоль основной оси*/
+/* justify-content: start-изначатьно выравнивает элемент слева */
+/* justify-content: end-значение выравнивает элемент справа */
+/* justify-content: space-between; выравнивает флекс элементы по сторонам с равным пространством */
+/* justify-content: space-around; выравнивает флекс элементы по сторонам с равным пространством 
+добавляя равное простнранство с лева и справа */
+/* align-items: своиство определяет */
 .block__row{
-    border:20px solid #5e5373;
+    display:flex;
+    justify-content:space-between;
+    
+    border:20px solid #ece89d;
+    margin: 0px 0px 20px 0px;
+    
+}
+
+.block__column {
+    border: 20px solid #5e5373;
 }
 .block__item{
     background-color:#18b5a4;
@@ -22,4 +40,16 @@ body{
     font-size:50px;
     color:#fff;
     font-weight:700;
+}
+.block__list{
+    display:flex;
+    align-items:center;
+    li margin:0px 15px 0px 0px;
+    
+
+}
+.block__info{
+    position:relative;
+    padding: 0px 0px 0px 25px;
+    line-height: 15px;
 }
